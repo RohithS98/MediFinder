@@ -96,7 +96,7 @@ public class SignUp2Activity extends AppCompatActivity {
         }
     }
 
-    CheckBox c1,c2,c3,c4;
+    CheckBox c1, c2, c3, c4, bap, ban, bbp, bbn, bop, bon, babp, babn;
     EditText t1, openTime, closeTime, co1, co2, co3, co4, cc1, cc2, cc3, cc4, phno;
     SetTime open, close, o1, o2, o3, o4, ct1, ct2, ct3, ct4;
 
@@ -124,6 +124,16 @@ public class SignUp2Activity extends AppCompatActivity {
         c2 = (CheckBox)findViewById(R.id.checkBox2);
         c3 = (CheckBox)findViewById(R.id.checkBox3);
         c4 = (CheckBox)findViewById(R.id.checkBox4);
+
+        bap = (CheckBox)findViewById(R.id.bldap);
+        ban = (CheckBox)findViewById(R.id.bldan);
+        bbp = (CheckBox)findViewById(R.id.bldbp);
+        bbn = (CheckBox)findViewById(R.id.bldbn);
+        bop = (CheckBox)findViewById(R.id.bldop);
+        bon = (CheckBox)findViewById(R.id.bldon);
+        babp = (CheckBox)findViewById(R.id.bldabp);
+        babn = (CheckBox)findViewById(R.id.bldabn);
+
         phno = (EditText)findViewById(R.id.phno);
         lat1 = (TextView)findViewById(R.id.curLat);
         long1 = (TextView)findViewById(R.id.curLong);
@@ -225,6 +235,14 @@ public class SignUp2Activity extends AppCompatActivity {
                         cc3.setText(object.getString("close3"));
                         cc4.setText(object.getString("close4"));
                         phno.setText(object.getString("phno"));
+                        bap.setChecked(object.getBoolean("bap"));
+                        ban.setChecked(object.getBoolean("ban"));
+                        bbp.setChecked(object.getBoolean("bbp"));
+                        bbn.setChecked(object.getBoolean("bbn"));
+                        bop.setChecked(object.getBoolean("bop"));
+                        bon.setChecked(object.getBoolean("bon"));
+                        babp.setChecked(object.getBoolean("babp"));
+                        babn.setChecked(object.getBoolean("babn"));
                     }
                     else{
                         Log.i("Parse stuff","New User");
@@ -317,6 +335,15 @@ public class SignUp2Activity extends AppCompatActivity {
                 object.put("b2",b2);
                 object.put("b3",b3);
                 object.put("b4",b4);
+
+                object.put("bap",bap.isChecked());
+                object.put("ban",ban.isChecked());
+                object.put("bbp",bbp.isChecked());
+                object.put("bbn",bbn.isChecked());
+                object.put("bop",bop.isChecked());
+                object.put("bon",bon.isChecked());
+                object.put("babp",babp.isChecked());
+                object.put("babn",babn.isChecked());
 
                 object.put("open1",co1.getText().toString());
                 object.put("close1",cc1.getText().toString());

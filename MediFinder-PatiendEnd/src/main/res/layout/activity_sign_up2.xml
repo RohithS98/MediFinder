@@ -225,10 +225,83 @@
             android:layout_marginLeft="150dp"
             android:hint="Closing Time" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blood"
+            android:layout_below="@+id/close4"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Select Available Blood Types"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bldap"
+            android:layout_below="@id/blood"
+            android:text="A+"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bldan"
+            android:layout_below="@id/blood"
+            android:layout_marginLeft="175px"
+            android:text="A-"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bldbp"
+            android:layout_below="@id/blood"
+            android:layout_marginLeft="350px"
+            android:text="B+"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bldbn"
+            android:layout_marginLeft="525px"
+            android:layout_below="@id/blood"
+            android:text="B-"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bldop"
+            android:layout_below="@id/bldbp"
+            android:text="O+"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bldon"
+            android:layout_below="@id/bldbp"
+            android:layout_marginLeft="175px"
+            android:text="O-"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bldabp"
+            android:layout_below="@id/bldbp"
+            android:layout_marginLeft="350px"
+            android:text="AB+"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bldabn"
+            android:layout_marginLeft="525px"
+            android:layout_below="@id/bldbp"
+            android:text="AB-"/>
+
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/open4"
+            android:layout_below="@id/bldabn"
             android:layout_centerHorizontal="true"
             android:text="Submit Details"
             android:id="@+id/submitButton"

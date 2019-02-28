@@ -901,6 +901,15 @@ id background_image_view
 id background_place_holder_image_view
 id barrier
 id beginning
+id bldabn
+id bldabp
+id bldan
+id bldap
+id bldbn
+id bldbp
+id bldon
+id bldop
+id blood
 id book_now
 id bottom
 id button
