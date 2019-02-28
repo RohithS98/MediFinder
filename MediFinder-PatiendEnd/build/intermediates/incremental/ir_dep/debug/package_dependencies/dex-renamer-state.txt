@@ -1,0 +1,7 @@
+#Thu Feb 28 10:53:21 IST 2019
+base.0=D\:\\apimedic_Module-master\\apimedic_Module-master\\MediFinder-PatiendEnd\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=D\:\\apimedic_Module-master\\apimedic_Module-master\\MediFinder-PatiendEnd\\build\\intermediates\\transforms\\dexMerger\\debug\\10
