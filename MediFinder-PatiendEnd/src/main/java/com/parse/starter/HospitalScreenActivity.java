@@ -3,6 +3,8 @@ package com.parse.starter;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.parse.LogOutCallback;
@@ -15,6 +17,8 @@ public class HospitalScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_screen);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     public void updateInfo(View view){
@@ -30,5 +34,20 @@ public class HospitalScreenActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+//                finish();
+                Intent intent = new Intent(HospitalScreenActivity.this, Main2Activity.class);
+                startActivity(intent);
+
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 }

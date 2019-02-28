@@ -41,6 +41,11 @@
         <activity android:name="com.parse.starter.nearbyHospital" />
         <activity android:name="com.parse.starter.Emergency" />
         <activity android:name="com.parse.starter.addSymptoms" />
+        <activity android:name="com.parse.starter.Main2Activity" />
+        <activity android:name="com.parse.starter.LoginActivity" />
+        <activity android:name="com.parse.starter.SignUp1Activity" />
+        <activity android:name="com.parse.starter.SignUp2Activity" />
+        <activity android:name="com.parse.starter.HospitalScreenActivity" />
         <activity
             android:name="com.parse.starter.MainActivity"
             android:label="Medifinder-Patient" >

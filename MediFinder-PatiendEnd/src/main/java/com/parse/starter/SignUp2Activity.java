@@ -16,6 +16,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
@@ -120,6 +122,7 @@ public class SignUp2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up2);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         c1 = (CheckBox)findViewById(R.id.checkBox1);
         c2 = (CheckBox)findViewById(R.id.checkBox2);
         c3 = (CheckBox)findViewById(R.id.checkBox3);
@@ -236,6 +239,22 @@ public class SignUp2Activity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+//                Intent intent = new Intent(SignUp2Activity.this, HospitalScreenActivity.class);
+//                startActivity(intent);
+
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
+    }
+
     public void getLoc(View view){
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // ask for permission
@@ -348,4 +367,5 @@ public class SignUp2Activity extends AppCompatActivity {
             }
         }
     }
+
 }
