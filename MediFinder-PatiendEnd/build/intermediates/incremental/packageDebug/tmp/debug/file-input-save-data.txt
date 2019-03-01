@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Feb 28 12:16:58 IST 2019
+#Fri Mar 01 23:01:11 IST 2019
 1.base=C\:\\Users\\sudheer\\Downloads\\Compressed\\Apimedic-master\\Apimedic-master\\apimedic_Module-master\\MediFinder-PatiendEnd\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 2.path=classes.dex
 0.baseType=DIRECTORY

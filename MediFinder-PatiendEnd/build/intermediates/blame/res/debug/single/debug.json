@@ -3512,12 +3512,12 @@
         "source": "C:\\Users\\sudheer\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-9.4.0.aar\\5e65c86b9a17de9475a39caad4bd657d\\res\\drawable-hdpi-v4\\powered_by_google_light.png"
     },
     {
-        "merged": "C:\\Users\\sudheer\\Downloads\\Compressed\\Apimedic-master\\Apimedic-master\\apimedic_Module-master\\MediFinder-PatiendEnd\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "C:\\Users\\sudheer\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c52c1d08e45f9a0298522a93c24d4c29\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "C:\\Users\\sudheer\\Downloads\\Compressed\\Apimedic-master\\Apimedic-master\\apimedic_Module-master\\MediFinder-PatiendEnd\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_up2.xml.flat",
         "source": "C:\\Users\\sudheer\\Downloads\\Compressed\\Apimedic-master\\Apimedic-master\\apimedic_Module-master\\MediFinder-PatiendEnd\\src\\main\\res\\layout\\activity_sign_up2.xml"
+    },
+    {
+        "merged": "C:\\Users\\sudheer\\Downloads\\Compressed\\Apimedic-master\\Apimedic-master\\apimedic_Module-master\\MediFinder-PatiendEnd\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\sudheer\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c52c1d08e45f9a0298522a93c24d4c29\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "C:\\Users\\sudheer\\Downloads\\Compressed\\Apimedic-master\\Apimedic-master\\apimedic_Module-master\\MediFinder-PatiendEnd\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_pressed.9.png.flat",

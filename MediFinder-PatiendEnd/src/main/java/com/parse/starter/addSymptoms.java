@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -40,6 +42,7 @@ public class addSymptoms extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_symptoms);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Intent intent=getIntent();
         String gender=intent.getStringExtra("Gender");
         Toast.makeText(addSymptoms.this, gender, Toast.LENGTH_SHORT).show();
@@ -56,5 +59,20 @@ public class addSymptoms extends AppCompatActivity {
             editText.setText(z);
 
         }
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+//                finish();
+                Intent intent = new Intent(addSymptoms.this, Emergency.class);
+                startActivity(intent);
+
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 }

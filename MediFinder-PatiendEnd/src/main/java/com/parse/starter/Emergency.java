@@ -13,6 +13,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Checkable;
@@ -169,6 +171,7 @@ public class Emergency extends AppCompatActivity {
         s7 = (CheckBox) findViewById(R.id.spec7);
         s8 = (CheckBox) findViewById(R.id.spec8);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //Code for getting Location
 
         locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
@@ -221,5 +224,20 @@ public class Emergency extends AppCompatActivity {
 
         };
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+//                finish();
+                Intent intent = new Intent(Emergency.this, PatientLogin.class);
+                startActivity(intent);
+
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 }
